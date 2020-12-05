@@ -13,13 +13,13 @@ outputs;
 - sort by
 - pipeline for aggregate
 
-# mongo package
+### mongo package
 [mongo-go-driver](https://github.com/mongodb/mongo-go-driver)
 
-# additional info for mongo go driver
+### additional info for mongo go driver
 [event#CommandMonitor in mongo-go-driver](https://pkg.go.dev/go.mongodb.org/mongo-driver@v1.4.4/event#CommandMonitor)
 
-# usage
+## usage
 ```go
 // Set client options
 clientOptions := options.Client().ApplyURI("mongodb://localhost:27017").SetMonitor(mongonitor.NewMongonitor())
@@ -45,5 +45,5 @@ if err != nil {
 fmt.Println("Connected to MongoDB!")
 ```
 
-# output
+### output
 <a href="url"><img src="https://raw.githubusercontent.com/cemkiy/mongonitor/main/mongonitor.png"></a>
