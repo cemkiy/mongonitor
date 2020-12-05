@@ -1,29 +1,48 @@
 # mongonitor
-mongodb basic monitor tool for golang package.
+Mongo db basic monitor tool for golang package.
 
 outputs;
 
 - query
 - db
-- cluster
+- cluster info
 - request id
-- miiliseconds
+- milliseconds
 - filter
 - limit
 - sort by
 - pipeline for aggregate
 
 # mongo package
-https://github.com/mongodb/mongo-go-driver
+[mongo-go-driver](https://github.com/mongodb/mongo-go-driver)
+
+# additional info for mongo go driver
+[event#CommandMonitor in mongo-go-driver](https://pkg.go.dev/go.mongodb.org/mongo-driver@v1.4.4/event#CommandMonitor)
 
 # usage
 ```go
-// use with newrelic
-nrMon := nrmongo.NewCommandMonitor(mongonitor.NewMongonitor())
-clientOptions := options.Client().ApplyURI(uri).SetMonitor(nrMon)
+// Set client options
+clientOptions := options.Client().ApplyURI("mongodb://localhost:27017").SetMonitor(mongonitor.NewMongonitor())
 
-// standart usage
-clientOptions := options.Client().ApplyURI(uri).SetMonitor(mongonitor.NewMongonitor())
+// use with newrelic
+// nrMon := nrmongo.NewCommandMonitor(mongonitor.NewMongonitor())
+// clientOptions := options.Client().ApplyURI("mongodb://localhost:27017").SetMonitor(nrMon)
+
+// Connect to MongoDB
+client, err := mongo.Connect(context.TODO(), clientOptions)
+
+if err != nil {
+    log.Fatal(err)
+}
+
+// Check the connection
+err = client.Ping(context.TODO(), nil)
+
+if err != nil {
+    log.Fatal(err)
+}
+
+fmt.Println("Connected to MongoDB!")
 ```
 
 # output
