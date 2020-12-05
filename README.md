@@ -1,5 +1,17 @@
 # mongonitor
-mongodb basic monitor tool.
+mongodb basic monitor tool for golang package.
+
+outputs;
+
+- query
+- db
+- cluster
+- request id
+- miiliseconds
+- filter
+- limit
+- sort by
+- pipeline for aggregate
 
 # mongo package
 https://github.com/mongodb/mongo-go-driver
@@ -15,4 +27,4 @@ clientOptions := options.Client().ApplyURI(uri).SetMonitor(mongonitor.NewMongoni
 ```
 
 # output
-<a href="url"><img src="https://raw.githubusercontent.com/cemkiy/mongonitor/main/mongonitor.png" align="left" height="350" width="280" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/cemkiy/mongonitor/main/mongonitor.png"></a>
