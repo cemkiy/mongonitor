@@ -14,4 +14,5 @@ clientOptions := options.Client().ApplyURI(uri).SetMonitor(nrMon)
 clientOptions := options.Client().ApplyURI(uri).SetMonitor(mongonitor.NewMongonitor())
 ```
 
-#output
+# output
+<a href="url"><img src="https://raw.githubusercontent.com/cemkiy/mongonitor/main/mongonitor.png" align="left" height="350" width="280" ></a>
