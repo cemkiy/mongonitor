@@ -22,7 +22,8 @@ outputs;
 ## usage
 ```go
 // Set client options
-clientOptions := options.Client().ApplyURI("mongodb://localhost:27017").SetMonitor(mongonitor.NewMongonitor())
+clientOptions := options.Client().ApplyURI("mongodb://localhost:27017").
+  SetMonitor(mongonitor.NewMongonitor())
 
 // use with newrelic
 // nrMon := nrmongo.NewCommandMonitor(mongonitor.NewMongonitor())
