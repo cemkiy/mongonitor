@@ -1,5 +1,6 @@
 <p align="center"><img src="https://github.com/cemkiy/mongonitor/blob/main/gopher.png" width="250"></p>
 <p align="center">
+  <a href="https://img.shields.io/badge/version-1.0.0-green.svg"><img src="https://img.shields.io/badge/version-1.0.0-green.svg"></a>
   <a href="https://github.com/cemkiy/mongonitor/actions"><img src="https://github.com/cemkiy/mongonitor/workflows/Go/badge.svg?branch=main"></a>
   <a href=""><img src="https://badgen.net/dependabot/cemkiy/mongonitor?icon=dependabot" alt="depandabot"></a>
 </p>
