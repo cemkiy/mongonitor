@@ -20,6 +20,12 @@ outputs;
 - sort by
 - pipeline for aggregate
 
+### install
+
+```go
+go get github.com/cemkiy/mongonitor
+```
+
 ### mongo package
 [mongo-go-driver](https://github.com/mongodb/mongo-go-driver)
 
