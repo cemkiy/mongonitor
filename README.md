@@ -27,9 +27,11 @@ go get github.com/cemkiy/mongonitor
 ```
 
 ### mongo package
-[mongo-go-driver](https://github.com/mongodb/mongo-go-driver)
+
+[![mongodb/mongo-go-driver - GitHub](https://gh-card.dev/repos/mongodb/mongo-go-driver.svg)](https://github.com/mongodb/mongo-go-driver)
 
 ### additional info for mongo go driver
+Check the godoc link.
 [event#CommandMonitor in mongo-go-driver](https://pkg.go.dev/go.mongodb.org/mongo-driver@v1.4.4/event#CommandMonitor)
 
 ## usage
