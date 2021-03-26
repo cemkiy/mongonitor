@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/biges/mgo/bson"
 	"github.com/fatih/color"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/event"
 )
 
